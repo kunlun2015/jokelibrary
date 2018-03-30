@@ -1,0 +1,9 @@
+@charset "UTF-8";
+/**
+ * common
+ * @authors Amos (szhcool1129@sina.com)
+ * @date    2018-03-29 21:10:24
+ * @version 1.0
+ */
+html,body,div,img,p,span,header,footer,ul,li,em,i{margin: 0;padding: 0;}
+ul,li{list-style: none;}
