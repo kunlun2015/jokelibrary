@@ -8,11 +8,13 @@
 <meta name="keywords" content="">
 <link href="<?=Config::get('staticUrl')?>/css/common.css" rel="stylesheet">
 <link href="<?=Config::get('staticUrl')?>/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="<?=Config::get('staticUrl')?>/libs/swiper/css/swiper.min.css">
+<script src="<?=Config::get('staticUrl')?>/libs/jquery-3.3.1.min.js"></script>
 </head>
 <body>
     <header class="header">
         <div class="logo">
-            <a href="">笑话库</a>
+            <a href=""></a>
         </div>
         <ul class="nav">
             <li><a href="">糗图</a></li>
@@ -24,7 +26,67 @@
         </ul>
     </header>
     <div class="wrap">
-        
+        <div class="list-left">
+            <div class="top-show">
+                <ul class="left-box">
+                    <li class="scale">
+                        <a href="">
+                            <img src="http://05.imgmini.eastday.com/mobile/20180328/20180328211443_5bceadd84451037677f0bfa218b6ab00_1.jpeg" alt="">
+                            <span class="title">这里是图片标题</span>
+                        </a>
+                    </li>
+                    <li class="scale">
+                        <a href="">
+                            <img src="http://05.imgmini.eastday.com/mobile/20180328/20180328211443_5bceadd84451037677f0bfa218b6ab00_1.jpeg" alt="">
+                            <span class="title">这里是图片标题</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide scale">
+                            <a href="">
+                                <img src="http://05.imgmini.eastday.com/mobile/20180328/20180328211443_5bceadd84451037677f0bfa218b6ab00_1.jpeg" alt="">
+                                <div class="title">这里是图片标题</div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide scale">
+                            <a href="">
+                                <img src="http://05.imgmini.eastday.com/mobile/20180328/20180328211443_5bceadd84451037677f0bfa218b6ab00_1.jpeg" alt="">
+                                <div class="title">这里是图片标题</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            <ul class="data-list">
+                <li>
+                   <div class="singal-mode-l">
+                       <a href="">
+                           <img src="http://05.imgmini.eastday.com/mobile/20180328/20180328211443_5bceadd84451037677f0bfa218b6ab00_1.jpeg" alt="">
+                       </a>
+                   </div>
+                   <div class="singal-mode-r">
+                        <div class="singal-mode-r-inner">
+                            <a class="title" href="">黄圣依婆家到底多有钱？饭桌都是你想象不到的！</a>
+                            <div class="list-footer-bar">
+                                <a class="classify">糗图</a>
+                                <a class="avatar">
+                                    <img src="http://05.imgmini.eastday.com/mobile/20180328/20180328211443_5bceadd84451037677f0bfa218b6ab00_1.jpeg" alt="">
+                                </a>
+                                <a class="username">用户名称</a>
+                            </div>
+                        </div>                       
+                   </div>
+                </li>
+            </ul>          
+        </div>
+        <div class="right"></div>
     </div>
+    <script src="<?=Config::get('staticUrl')?>/libs/swiper/js/swiper.min.js"></script>
+    <script src="<?=Config::get('staticUrl')?>/js/index.js"></script>
 </body>
 </html>

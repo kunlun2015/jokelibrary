@@ -7,9 +7,6 @@ class Index extends Controller
 {
     public function index()
     {
-        $joke = new Joke;
-        $list = $joke->list();
-        print_r($list);
-        //return $this->fetch();
+        return $this->fetch();
     }
 }
