@@ -137,6 +137,6 @@ return [
     // 异常处理handle类 留空使用 \think\exception\Handle
     'exception_handle'       => '',
 
-    'staticUrl' => 'http://localhost/amos/jokelibrary/public/static'
+    'staticUrl' => 'http://localhost/jokelibrary/public/static'
 
 ];
