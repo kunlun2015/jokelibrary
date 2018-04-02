@@ -55,7 +55,7 @@
 }
 
 .data-list{margin-top: 15px;}
-.data-list li{position: relative;height: 100px;overflow: hidden;padding: 12px 0;-webkit-transition:background-color .2s linear;border-bottom: 1px solid #e8e8e8;}
+.data-list li{position: relative;min-height: 100px;overflow: hidden;padding: 12px 0;-webkit-transition:background-color .2s linear;border-bottom: 1px solid #e8e8e8;}
 .data-list li:hover{background-color: #f0f0f0;}
 .singal-mode-l{float: left;width: 180px;height: 100px;overflow: hidden;}
 .singal-mode-l img{width: 180px;overflow: hidden;}
@@ -75,7 +75,10 @@
 .list-footer-bar .time{display: inline-block;font-size: 14px;line-height: 1;color: #999;vertical-align: middle;}
 .footer-bar-right{float: right;font-size: 14px;line-height: 1;color: #999;line-height: 20px;}
 
-.more-mode .pic-list li{float: left;width: 190px;margin-left: 10px;overflow: hidden;}
+.more-mode .pic-list{margin-top: 10px;overflow: hidden;}
+.more-mode .pic-list li{float: left;width: 192px;height: 140px;margin-left: 10px;padding: 0;overflow: hidden;}
+.more-mode .pic-list li:first-child{margin-left: 0;}
+.more-mode .pic-list img{width: 192px;height: 140px;}
 
 .jitang li{margin-top: 8px;}
 .jitang li:first-child{margin-top: 0;}
