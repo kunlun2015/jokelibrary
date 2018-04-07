@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>{if isset($seo['title'])}{$seo['title']}-{/if}笑话库</title>
+<meta name="description" content="{if isset($seo['description'])}{$seo['description']}{else}笑话库，幽默笑话网站，笑话推荐，糗图，视频搞笑，漫画大全，综合类笑话库{/if}">
+<meta name="keywords" content="{if isset($seo['keywords'])}{$seo['keywords']}{else}笑话库,糗图,段子,漫画,动图,视频,心灵鸡汤{/if}">
+<link href="<?=Config::get('staticUrl')?>/css/common.css" rel="stylesheet">
+<link href="<?=Config::get('staticUrl')?>/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="<?=Config::get('staticUrl')?>/libs/swiper/css/swiper.min.css">
+<script src="<?=Config::get('staticUrl')?>/libs/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="{:url('/')}"></a>
+        </div>
+        <ul class="nav">
+            <li><a{if Request()->controller() === 'Index' && Request()->action() === 'qiutu'} class="active"{/if} href="{:url('/qiutu')}">糗图</a></li>
+            <li><a{if Request()->controller() === 'Index' && Request()->action() === 'duanzi'} class="active"{/if} href="{:url('/duanzi')}">段子</a></li>
+            <li><a href="{:url('/manhua')}">漫画</a></li>
+            <li><a href="{:url('/gif')}">动画</a></li>
+            <li><a href="{:url('/video')}">视频</a></li>
+            <li><a href="{:url('/xinlingjitang')}">心灵鸡汤</a></li>
+        </ul>
+    </header>
+    <div class="wrap">
